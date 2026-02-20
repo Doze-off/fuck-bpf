@@ -1,0 +1,27 @@
+From 0d230e0e569a3337287d29edc4bd3543ad9f89fa Mon Sep 17 00:00:00 2001
+From: Pierre-Hugues Husson <phh@phh.me>
+Date: Wed, 13 Oct 2021 10:56:52 -0400
+Subject: [PATCH 3/4] Support no-bpf usecase
+
+Change-Id: I75a427a2a41aa4ab1104ad88a891bef0dc2d9c91
+---
+ loader/Loader.cpp | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/loader/Loader.cpp b/loader/Loader.cpp
+index cde6447..6303d30 100644
+--- a/loader/Loader.cpp
++++ b/loader/Loader.cpp
+@@ -689,8 +689,7 @@ void vendorBpfLoader() {
+         ALOGE("If this triggers randomly, you might be hitting some memory allocation "
+               "problems or startup script race.");
+         ALOGE("--- DO NOT EXPECT SYSTEM TO BOOT SUCCESSFULLY ---");
+-        sleep(20);
+-        exit(121);
++        return;
+     }
+ 
+     const char* args[] = {"/apex/com.android.tethering/bin/netbpfload", "done", NULL};
+-- 
+2.34.1
+
