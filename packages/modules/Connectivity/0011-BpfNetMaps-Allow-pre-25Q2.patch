@@ -1,0 +1,27 @@
+From d9e1e0240ce97cbe15f893dc13bf5b899cef9892 Mon Sep 17 00:00:00 2001
+From: Yumi Yukimura <me.cafebabe@gmail.com>
+Date: Wed, 24 Sep 2025 22:07:03 +0800
+Subject: [PATCH 2/3] BpfNetMaps: Allow pre-25Q2
+
+Change-Id: I19ca4a096b21d63d99cfa684bc1bf5dafcda830c
+---
+ service/src/com/android/server/BpfNetMaps.java | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/service/src/com/android/server/BpfNetMaps.java b/service/src/com/android/server/BpfNetMaps.java
+index 3ce30fa753a..d2c265356af 100644
+--- a/service/src/com/android/server/BpfNetMaps.java
++++ b/service/src/com/android/server/BpfNetMaps.java
+@@ -478,8 +478,7 @@ public class BpfNetMaps {
+      NetworkStackUtils.isAtLeast25Q2 when it is moved to a static lib.
+      */
+     public static boolean isAtLeast25Q2() {
+-        return SdkLevel.isAtLeastB()  || (SdkLevel.isAtLeastV()
+-                && "Baklava".equals(Build.VERSION.CODENAME));
++        return false;
+     }
+ 
+     private void removeRule(final int uid, final long match, final String caller) {
+-- 
+2.34.1
+
