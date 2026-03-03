@@ -1,7 +1,7 @@
-From 0d230e0e569a3337287d29edc4bd3543ad9f89fa Mon Sep 17 00:00:00 2001
+From 71dcdd34025efd4afa48c1ac4c0879b3aeaf14ac Mon Sep 17 00:00:00 2001
 From: Pierre-Hugues Husson <phh@phh.me>
 Date: Wed, 13 Oct 2021 10:56:52 -0400
-Subject: [PATCH 3/4] Support no-bpf usecase
+Subject: [PATCH 2/3] Support no-bpf usecase
 
 Change-Id: I75a427a2a41aa4ab1104ad88a891bef0dc2d9c91
 ---
@@ -23,5 +23,5 @@ index cde6447..6303d30 100644
  
      const char* args[] = {"/apex/com.android.tethering/bin/netbpfload", "done", NULL};
 -- 
-2.34.1
+2.43.0
 
