@@ -1,7 +1,7 @@
-From 48635ecc0ba52cbc5226e2f1b92b6158922a79ad Mon Sep 17 00:00:00 2001
+From 6f0534d680a4d459ae1bece435c221e24210990e Mon Sep 17 00:00:00 2001
 From: rio004 <riyon336@gmail.com>
 Date: Tue, 3 Mar 2026 10:22:08 +0000
-Subject: [PATCH 2/2] kernel_configs: Relax 4.14 base kver requirement
+Subject: [PATCH 2/4] kernel_configs: Relax 4.14 base kver requirement
 
 * Our boys need 4.14.186 too
 
@@ -81,5 +81,5 @@ index 8087261..dbb6e9d 100644
  CONFIG_TUN=y
  CONFIG_UHID=y
 -- 
-2.43.0
+2.46.0
 
