@@ -1,7 +1,7 @@
 From 6f0534d680a4d459ae1bece435c221e24210990e Mon Sep 17 00:00:00 2001
 From: rio004 <riyon336@gmail.com>
 Date: Tue, 3 Mar 2026 10:22:08 +0000
-Subject: [PATCH 2/4] kernel_configs: Relax 4.14 base kver requirement
+Subject: [PATCH 2/5] kernel_configs: Relax 4.14 base kver requirement
 
 * Our boys need 4.14.186 too
 

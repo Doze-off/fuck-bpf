@@ -1,7 +1,7 @@
 From c55a6071dc884e54c480c46e2edb7f606ec4a093 Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Sun, 22 Oct 2023 10:26:25 +0200
-Subject: [PATCH 3/4] Restore q/android-4.9
+Subject: [PATCH 3/5] Restore q/android-4.9
 
 This partially reverts commit bbde8520706a67fcb72dbf8b4c3764cd056f171c.
 
