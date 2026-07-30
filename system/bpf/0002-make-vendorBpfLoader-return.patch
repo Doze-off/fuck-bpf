@@ -1,4 +1,4 @@
-From c0328dfd48933a8c7289499481ba94a420f8d584 Mon Sep 17 00:00:00 2001
+From 06c023e9928d53ef6a61005700056a72a0592607 Mon Sep 17 00:00:00 2001
 From: oberdfr <alebennella@gmail.com>
 Date: Wed, 18 Feb 2026 19:00:54 +0100
 Subject: [PATCH 2/4] make vendorBpfLoader return
@@ -21,5 +21,5 @@ index 706c0e8..dfe9469 100644
  #endif
  void vendorBpfLoader();
 -- 
-2.34.1
+2.46.0
 
